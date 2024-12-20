@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de estudiantes</title>
+</head>
+
+<body>
+    {% for estudiante in estudiantes %}
+    <li>{{estudiante.nombre}}</li>
+    {% endfor %}
+    <a href="{% url 'crear_estudiantes' %}">crear estudiante</a>
+</body>
+
+</html>
